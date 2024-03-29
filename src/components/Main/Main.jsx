@@ -17,9 +17,7 @@ const Main = () => {
   return (
     <div className="main">
       <div className="nav">
-        {/* <p> */}
-        <img src={logo} alt="logo" style={{ width: "200px", height: "20px" }} />
-        {/* </p> */}
+        <img src={logo} alt="logo" style={{ width: "200px", height: "30px" }} />
         <img src={assets.user_icon} className="userimg" alt="" />
       </div>
       <div className="main-container">
@@ -31,18 +29,11 @@ const Main = () => {
             </div>
             <div className="result-data">
               {/* <img src={logo} alt="" /> */}
-              <p
-                style={{
-                  backgroundColor: "red",
-                  color: "white",
-                  width: "35px",
-                  height: "35px",
-                  borderRadius: "50%",
-                  textAlign: "center",
-                }}
-              >
-                A
-              </p>
+              <img
+                src="https://www.agicent.com/assets/images/site_logo/favicon/android-chrome-192x192.png"
+                className="brand"
+                alt=""
+              />
               {loading ? (
                 <div className="loader">
                   <hr className="animated-bg" />
@@ -92,8 +83,8 @@ const Main = () => {
               placeholder="Enter a prompt here"
             />
             <div>
-              <img src={assets.gallery_icon} width={30} alt="" />
-              <img src={assets.mic_icon} width={30} alt="" />
+              {/* <img src={assets.gallery_icon} width={30} alt="" />
+              <img src={assets.mic_icon} width={30} alt="" /> */}
               {input ? (
                 <img
                   onClick={() => onSent()}

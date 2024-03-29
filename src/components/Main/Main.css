@@ -69,7 +69,7 @@
 }
 .main-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   width: 100%;
   max-width: 900px;
   padding: 0 20px;
@@ -83,6 +83,7 @@
   background-color: #f0f4f9;
   padding: 10px 20px;
   border-radius: 50px;
+  border: 2px solid black;
 }
 .search-box input {
   flex: 1;
@@ -157,6 +158,13 @@
   font-size: 17px;
   font-weight: 300;
   line-height: 1.8;
+}
+
+.result-data .brand {
+  width: 36px;
+  /* padding: 1.5px; */
+  border-radius: 50%;
+  background-color: #ee3322;
 }
 @media (max-width: 600px) {
   .main-bottom input {
